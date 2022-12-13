@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website car</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header-area">
+        <div class="navbar-area">
+            <nav class="site-navbar">
+         <a href="#home" class="site-logo">MOTORA</a>
+         <div class="links flex">
+          <ul>
+            <li> <a href="#"> Home</a> </li>
+            <li> <a href="#"> About </a> </li>
+            <li> <a href="#"> services</a> </li>
+            <li> <a href="#"> contact </a> </li>
+          </ul>
+          <div class="account">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-phone-alt"></i>
+           <span>Call: +123 456  7898</span>
+          </div>
+          <div class="navtoogle">
+            <i class="fas fa-bars"></i> 
+          </div>
+         </div>
+            </nav>
+        </div>
+    </header>
+    <script>
+  const navtoogle = document.querySelector('.navtoogle');
+  const navmenu = document.querySelector('.site-navbar ul');
+  const navlinks = document.querySelector('.site-navbar a');
+
+  allEventListners();
+
+  function allEventListners() {
+    navtoogle.addEventListener('click', toggleclick);
+    navlinks.forEach(elem => elem.addEventListener('click', navlinksclicks));
+
+}
+
+function toggleclick() {
+    navtoogle.classList.toggle('toggle-open');
+    navmenu.classList.toggle('open');
+}
+  
+    </script>
+
+    <section class="home top">
+    <div class="container">
+        <div class="circle"></div>
+        <div class="owl-carousel owl-theme">
+            <div class="item flex">
+                <div class="left mtop">
+                <h1>Car Repair And Mantenanace</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quidem officia facere corporis id obcaecati fugit cumque? Soluta minima et quaerat, modi voluptas facere eos animi porro distinctio consequatur quia!</p>
+                <div class="button">
+                    <button class="btn1">Read More</button>
+                    <button class="btn2">Contact Us</button>
+                </div>
+            
+            </div>
+            <div class="righ mtop">
+                <img src="image/home.png" alt="">
+            </div>
+        </div>
+    </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    dots:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+    </script>
+
+    <section class="services">
+<div class="container">
+    <h2>Our  Services</h2>
+    <div class="content grid mtop">
+  <div class="box">
+    <img src="image/s1.png" alt="">
+    <h3>General Maintenance</h3>
+    <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+    <a href="#"> Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+  </div>
+  <div class="box">
+    <img src="image/s2.png" alt="">
+    <h3>General Maintenance</h3>
+    <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+    <a href="#"> Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+  </div>
+
+  <div class="box">
+    <img src="image/s3.png" alt="">
+    <h3>General Maintenance</h3>
+    <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+    <a href="#"> Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+  </div>
+  <div class="box">
+    <img src="image/s4.png" alt="">
+    <h3>General Maintenance</h3>
+    <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+    <a href="#"> Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+  </div>
+  <div class="box">
+    <img src="image/s5.png" alt="">
+    <h3>General Maintenance</h3>
+    <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+    <a href="#"> Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+  </div>
+  <div class="box">
+    <img src="image/s6.png" alt="">
+    <h3>General Maintenance</h3>
+    <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+    <a href="#"> Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+  </div>
+    </div>
+</div>
+    </section>
+
+    <section class="about">
+        <div class="container flex">
+        <div class="circle"></div>
+        <div class="left top">
+        <img src="image/a.png" alt="">
+        </div>
+        <div class="right top">
+        <h1>About Us</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam eaque veniam officiis, eligendi laboriosam expedita eum. Quidem corrupti assumenda, nesciunt illo, esse hic tempora nostrum labore odio amet aperiam repellendus.</p>
+        <button class="btn2">Read More</button>
+        </div>
+        </div>
+    </section>
+
+    <section class="services choose top">
+     <div class="container">
+        <h1>Why Choose Us</h1>
+        <div class="content grid mtop">
+        <div class="box">
+            <img src="image/w1.png" alt="">
+            <h3>Best Workers</h3>
+            <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+            <a href="#"> Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="box">
+            <img src="image/w2.png" alt="">
+            <h3>Best Workers</h3>
+            <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+            <a href="#"> Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        <div class="box">
+            <img src="image/w3.png" alt="">
+            <h3>Best Workers</h3>
+            <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+            <a href="#"> Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+        </div>
+     </div>
+    </section>
+
+    <section class="customer top">
+<div class="container">
+    <h1>Testimonials</h1>
+    <p>Even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to</p>
+    <div class="owl-carousel owl-theme content mtop">
+    <div class="item flex">
+<div class="image">
+    <div class="img">
+        <img src="image/serv.jpg" alt="">
+    </div>
+</div>
+<div class="text">
+    <div class="heading flex1">
+   <div class="para">
+    <h3>MORO JINK</h3>
+    <h5>CUSTOMER</h5>
+   </div>
+   <div class="para">
+    <i class="fas fa-quote-left"></i>
+   </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta autem itaque quidem earum amet dolore, officia hic libero illo nobis possimus, nam iusto excepturi natus illum, distinctio modi deleniti.</p>
+</div>
+    </div>
+    </div>
+</div>
+    </section>
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    navText:["<i class='fas fa-long-arrow-alt-right'></i>", "<i class='fas fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+    </script>
+
+    <section class="contact top">
+   <div class="container flex">
+<div class="circle"></div>
+<div class="left">
+    <h1>Get In Toch</h1>
+    <form action="">
+        <input type="text" placeholder="Your Name">
+        <input type="text" placeholder="Your Email">
+        <input type="text" placeholder="Your Phone">
+        <textarea  cols="80" rows="5">Message</textarea>
+        <button class="btn2">SEND</button>
+    </form>
+</div>
+<div class="right">
+    <div class="img">
+        <img src="image/contact.png" alt="">
+    </div>
+</div>
+   </div>
+    </section>
+
+    <footer>
+        <div class="container top">
+       <div class="content grid">
+    <div class="box flex">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Location</span> 
+    </div>
+    <div class="box flex">
+        <i class="fa fa-phone"></i>
+        <span>+5878 588887</span> 
+    </div>
+    <div class="box flex">
+        <i class="fa fa-envelope"></i>
+        <span>demo@exemple.com</span> 
+    </div>
+    <div class="box flex">
+        <input type="text" placeholder="Your email adrees">
+        <i class="fas fa-long-arrow-alt-right"></i>
+        
+    </div>
+       </div>
+       <div class="social mtop">
+     <div class="logo">
+        <h1>MOTORA</h1>
+     </div>
+     <ul>
+        <li><i class="fab fa-facebook-f"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-youtube"></i></li>
+     </ul>
+       </div>
+        </div>
+    </footer>
+    <div class="legal">
+        <p>CopyRight 2022</p>
+    </div>
+</body>
+</html>
